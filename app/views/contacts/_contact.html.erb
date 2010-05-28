@@ -1,0 +1,6 @@
+<% div_for contact do %>
+	<h2><%= link_to_unless_current h("#{contact.last_name}, #{contact.first_name}"), contact %></h2>
+	<%= h("#{contact.prefix} #{contact.first_name} \"#{contact.nick}\" #{contact.middle_name} #{contact.last_name}, #{contact.suffix}") %><br />
+	<%= h("#{contact.job_title} - #{contact.department}, #{contact.company}") %><br />
+	<% simple_format contact.notes %>
+<% end %>

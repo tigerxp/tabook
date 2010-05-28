@@ -1,0 +1,7 @@
+<%= render :partial => @contact %>
+
+<br />
+
+<%= link_to 'Edit', edit_contact_path(@contact) %> |
+<%= link_to 'Delete', @contact, :confirm => 'Are you sure?', :method => :delete %> |
+<%= link_to 'Back', contacts_path %>
